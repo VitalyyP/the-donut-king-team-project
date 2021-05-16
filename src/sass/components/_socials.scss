@@ -39,3 +39,28 @@
     fill: var(--button-background-color);
   }
 }
+
+.social_list--hero {
+  margin-bottom: 40.5px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-bottom: 26.5px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 59px;
+  }
+}
+
+.social_list--footer {
+  margin-bottom: 42.5px;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 45.5px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 76px;
+  }
+}
