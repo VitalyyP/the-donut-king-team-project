@@ -1,0 +1,45 @@
+.slick-slide .slide-thumb-img {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // width: 100%;
+    // transform: translate(-50%, -50%)
+    transform: scale(1);
+    transition: transform 500ms linear;
+}
+
+.slick-current .slide-thumb-img {
+    margin-bottom: 6px;
+    transform: scale(1.72);
+}
+
+.slide-thumb-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-name {
+    font-style: italic;
+    font-weight: 500;
+    line-height: 4.06;
+    text-align: center;
+}
+
+.slide-text {
+    display: none;
+    width: 626px;
+    text-align: center;
+}
+
+.slick-current .slide-text {
+    display: block;
+}

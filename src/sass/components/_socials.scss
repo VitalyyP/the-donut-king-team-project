@@ -1,0 +1,26 @@
+.social_list {
+  display: flex;
+}
+
+.social_item:not(:last-child) {
+  margin-right: 12px;
+
+  @media screen and (max-width: 1279.98px) {
+    margin-right: 10px;
+  }
+}
+
+.social_item__icon {
+  display: flex;
+  width: 25px;
+  height: 20px;
+
+  @media screen and (max-width: 1279.98px) {
+    width: 19px;
+    height: 15px;
+  }
+
+  &:focus, &:hover {
+    fill: var(--button-background-color);
+  }
+}
