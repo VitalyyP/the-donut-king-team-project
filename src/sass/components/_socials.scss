@@ -1,7 +1,6 @@
 .social_list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 
 .social_item:last-child {
@@ -38,7 +37,7 @@
   margin-top: 40.5px;
 
   @media screen and (min-width: 768px) {
-    margin-left: 0;
+    justify-content: left;
     margin-top: 26.5px;
   }
 
