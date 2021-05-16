@@ -1,9 +1,13 @@
 .title {
+  display: inline-block;
+  margin-bottom: 0;
+  align-items: center;
+
   font-family: var(--title-font);
   font-size: 24px;
   line-height: 2.71;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 36px;
   }
 }
