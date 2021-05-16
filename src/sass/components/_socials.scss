@@ -1,14 +1,8 @@
 .social_list {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-// .social_item:not(:last-child) {
-//   margin-right: 10px;
-  
-//   @media screen and (min-width: 1280px) {
-//     margin-right: 12px;
-//   }
-// }
 
 .social_item:last-child {
   margin-left: -5px;
@@ -41,26 +35,26 @@
 }
 
 .social_list--hero {
-  margin-bottom: 40.5px;
+  margin-top: 40.5px;
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
-    margin-bottom: 26.5px;
+    margin-top: 26.5px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 59px;
+    margin-top: 59px;
   }
 }
 
 .social_list--footer {
-  margin-bottom: 42.5px;
+  margin-top: 42.5px;
   
   @media screen and (min-width: 768px) {
-    margin-bottom: 45.5px;
+    margin-top: 45.5px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 76px;
+    margin-top: 76px;
   }
 }
