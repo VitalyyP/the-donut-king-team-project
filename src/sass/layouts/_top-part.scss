@@ -25,15 +25,16 @@
   @media screen and(min-width: 1280px) {
     background-image: url('/images/desktop/background/bg.png'),
       url('/images/desktop/other/cupcake.png');
-    background-size: 100% 1036px, 548px 512px;
+    background-size: 100% 1036px, 547px 512px;
     background-repeat: no-repeat;
-    background-position: top 0 left 0, top 548px left 71px;
+    background-position: top 0 left 0, top 560px left 71px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/desktop/background/bg@2x.png');
+      background-image: url('/images/desktop/background/bg@2x.png'),
+        url('/images/desktop/other/cupcake@2x.png');
     }
   }
 }
