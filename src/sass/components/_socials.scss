@@ -10,15 +10,20 @@
 //   }
 // }
 
+.social_item:last-child {
+  margin-left: -5px;
+}
+
 .social_item__link {
   display: block;
-  padding: 4.7px;
+  padding: 4.5px;
   
   @media screen and (min-width: 1280px) {
     padding: 6px;
     
   }
 }
+
 .social_item__icon {
   display: flex;
   width: 19px;
