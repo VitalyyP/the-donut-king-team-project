@@ -1,24 +1,29 @@
 .top-part {
-  background-image: url('/images/mobile/background/bg.png');
-  background-size: 100% 461px;
+  background-image: url('/images/mobile/other/cupcake.png'), url('/images/mobile/background/bg.png');
+  background-size: 310px 290px, 100% 461px;
   background-repeat: no-repeat;
+  background-position: top 308px center, top 0 left 0;
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/images/mobile/background/bg@2x.png');
+    background-image: url('/images/mobile/other/cupcake@2x.png'),
+      url('/images/mobile/background/bg@2x.png');
   }
 
   @media screen and(min-width: 768px) {
-    background-image: url('/images/tablet/background/bg.png');
-    background-size: 100% 622px;
+    background-image: url('/images/tablet/other/cupcake.png'),
+      url('/images/tablet/background/bg.png');
+    background-size: 352px 330px, 100% 622px;
+    background-position: top 377px left 11px, top 0 left 0;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/tablet/background/bg@2x.png');
+      background-image: url('/images/tablet/other/cupcake@2x.png'),
+        url('/images/tablet/background/bg@2x.png');
     }
   }
 
