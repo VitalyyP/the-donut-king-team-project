@@ -12,7 +12,7 @@
   background-color: var(--button-background-color);
   border: 1px solid var(--button-background-color);
   border-radius: 25px;
-  font-family: --title-font;
+  font-family: var(--title-font);
 
   &:focus,
   &:hover {
