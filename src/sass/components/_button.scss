@@ -2,21 +2,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 158px;
-  height: 45px;
-  font-size: 24px;
+  width: 145px;
+  height: 40px;
+  font-size: 18px;
   font-family: 'Caveat Brush', cursive;
-  line-height: 2.71;
+  // line-height: 2.71;
   text-align: center;
   color: var(--button-text-color);
   background-color: var(--button-background-color);
   border: 1px solid var(--button-background-color);
   border-radius: 25px;
   font-family: var(--title-font);
+  
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 45px;
+    font-size: 24px;
+    
+  }
 
   &:focus,
   &:hover {
     color: var(--button-background-color);
     background-color: var(--button-text-color);
+
+
   }
 }

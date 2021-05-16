@@ -196,21 +196,14 @@ color: rgba(171, 129, 108, 0.5);
 
 
 .registration__button{
-    width: 145px;
-    height: 40px;
     margin-top: 37px;
     margin-left: auto;
     margin-right: auto;
-
-    
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 3.6;
-
+  
+   
 @media screen and (min-width: 767px){
     margin-top: 110px;
-   margin-right: 21px;
+    margin-right: 21px;
 
 }
 @media screen and (min-width: 1279px){
