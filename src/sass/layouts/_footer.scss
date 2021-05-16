@@ -1,0 +1,124 @@
+.footer {
+    margin-top: 77px;
+}
+/*контейнер_запитання*/
+.footer_contact {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_title {
+    font-family: Caveat Brush;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.80;
+/* identical to box height, or 181% */
+
+    color: #2E2520;
+}
+
+.footer_text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 4.06;
+    /* identical to box height, or 406% */
+
+    text-align: center;
+
+    color: #2E2520;
+}
+  
+.footer_form_input {
+    align-self: center;
+    width: 265px;
+    height: 20px;
+    border: 1px solid #AB816C;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    
+    @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+        width: 410px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 430px;
+    }
+
+    &::placeholder {
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(171, 129, 108, 0.5);
+    }
+}
+
+.footer_question {
+       
+    align-self: center;
+    width: 265px;
+    height: 20px;
+    border: 1px solid #AB816C;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    margin-top: 15px;
+       
+    @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+        width: 410px;
+    }
+   
+    @media screen and (min-width: 1280px) {
+       width: 430px;
+    }
+
+&::placeholder {
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    
+    color: rgba(171, 129, 108, 0.5);
+    }
+}
+
+/*соц-мережі*/
+.social_list {
+    display: flex;
+    justify-content: center;
+    margin-top: 74px;
+}
+
+/*телефон_і_адреса*/
+.footer_adress_list {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_adress {
+    color: #2E2520;
+    text-decoration: none;
+}
+
+.footer_adress__icon {
+    width: 13px;
+    height: 13px;
+}
+
+.footer_btn {
+    margin-top: 15px;
+    align-self: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
