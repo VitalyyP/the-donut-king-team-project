@@ -150,7 +150,7 @@
   color: #000000;
 
   @media screen and (min-width: 1280px) {
-    height: 30px;
+    font-size: 23px;
   }
 }
 
@@ -173,11 +173,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 60px;
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 60px;
   }
   @media screen and (min-width: 1280px) {
     margin-top: 40px;
@@ -262,4 +263,36 @@ img.cake:focus {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.addReadMore.showlesscontent .SecSec,
+.addReadMore.showlesscontent .readLess {
+  display: none;
+}
+
+.addReadMore.showmorecontent .readMore {
+  display: none;
+}
+
+.addReadMore .readMore,
+.addReadMore .readLess {
+  display: flex;
+  margin-left: 2px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 67px;
+  height: 65px;
+  left: 15px;
+  font-family: Caveat Brush;
+  color: #ab816c;
+  cursor: pointer;
+}
+
+.addReadMore .readLess {
+  padding-top: 10px;
+}
+
+.addReadMoreWrapTxt.showmorecontent .SecSec,
+.addReadMoreWrapTxt.showmorecontent .readLess {
+  display: block;
 }
