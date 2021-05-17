@@ -28,3 +28,23 @@
 
   --grid-num: 2;
 }
+
+/*анімація*/
+.animate_icon:hover {
+  animation: animateY-5 1500ms;
+  content: "translateY(-5px)";
+}
+
+@keyframes animateY-5 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
