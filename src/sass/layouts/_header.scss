@@ -31,9 +31,18 @@
 
 .header_link {
   & > a {
-    color: currentColor;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
     text-decoration: none;
+    color: currentColor;
+
+    &:hover,
+    &:focus {
+      color: var(--menu-link-current-text-color);
+    }
   }
+
   &:not(:last-child) {
     margin-right: 20px;
   }
@@ -41,12 +50,24 @@
 
 .mobile-menu_list {
   margin-top: 40px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.21;
+  text-align: center;
 }
 
 .mobile-menu_item {
   & > a {
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: currentColor;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--menu-link-current-text-color);
+    }
   }
 
   &:not(:last-child) {

@@ -98,3 +98,13 @@
     margin-right: 10px;
   }
 }
+
+.hero_spoon {
+  position: absolute;
+  left: 0;
+  top: 165px;
+
+  @media screen and (max-width: 1279.98px) {
+    display: none;
+  }
+}

@@ -6,6 +6,11 @@
     border: none;
     background-color: transparent;
   
+    &:hover,
+    &:focus {
+      fill: var(--menu-link-current-text-color);
+    }
+
     @media screen and (min-width: 1280px) {
       display: none;
   }

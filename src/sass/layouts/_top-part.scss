@@ -58,6 +58,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+    background-size: 120px 114px;
     background-image: url(/images/mobile/donut/donuts@2x.png);
   }
 
@@ -69,6 +70,9 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
+      feature/font-size
+      background-size: 380px 361px;
+
       background-image: url(/images/tablet/donut/donuts@2x.png);
     }
   }
@@ -81,6 +85,9 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
+      feature/font-size
+      background-size: 719px 660px;
+
       background-image: url(/images/desktop/donut/donuts@2x.png);
     }
   }
