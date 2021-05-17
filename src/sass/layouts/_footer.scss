@@ -48,38 +48,36 @@
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 .footer_title {
-    font-family: Caveat Brush;
+    font-family: var(--title-font);
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 1.80;
 /* identical to box height, or 181% */
     margin-bottom: 0;
-    color: #2E2520;
+    color: var(--title-text-color);
 }
 
 .footer_text {
-    font-family: Montserrat;
+    font-family: var(--text-font);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 4.06;
+    line-height: 1.18;
     /* identical to box height, or 406% */
 
     text-align: center;
-
-    color: #2E2520;
+    color: var(--title-text-color);
 }
   
 .footer_form_input {
     align-self: center;
     width: 265px;
     height: 20px;
-    border: 1px solid #AB816C;
+    border: 1px solid var(--form-lines-color);
     border-top: transparent;
     border-right: transparent;
     border-left: transparent;
@@ -94,13 +92,13 @@
 
     &::placeholder {
     
-        font-family: Montserrat;
+        font-family: var(--text-font);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
 
-        color: rgba(171, 129, 108, 0.5);
+        color: var(--form-placeholder-color);
     }
 }
 
@@ -108,7 +106,7 @@
     align-self: center;
     width: 265px;
     height: 20px;
-    border: 1px solid #AB816C;
+    border: 1px solid var(--form-lines-color);
     border-top: transparent;
     border-right: transparent;
     border-left: transparent;
@@ -124,13 +122,13 @@
 
 &::placeholder {
     
-    font-family: Montserrat;
+    font-family: var(--text-font);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     
-    color: rgba(171, 129, 108, 0.5);
+    color: var(--form-placeholder-color);
     }
 }
 
@@ -149,9 +147,13 @@
 }
 
 .footer_adress {
-    color: #2E2520;
+    color: var(--base-icon-color);
+    fill: var(--base-icon-color);
     text-decoration: none;
-        
+    &:hover {
+        color: var(--button-background-color);
+        fill: var(--button-background-color);
+    }
 }
 
 .footer_adress__icon {
@@ -161,22 +163,8 @@
 
 /*анімація іконок*/
 .footer_adress_box:hover .footer_adress__icon {
-    animation: animateY-5 2000ms infinite 100ms;
+    animation: animateY-5 2000ms infinite 10ms;
     content: "translateY(-5px)";
-}
-
-@keyframes animateY-5 {
-    0% {
-      transform: translateY(0);
-    }
-  
-    50% {
-      transform: translateY(-5px);
-    }
-  
-    100% {
-      transform: translateY(0);
-    }
 }
 
 /*кнопка*/
