@@ -22,36 +22,28 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
   </head>
   <body>
     <div class="container_max">
-      <section class="top-part">
+      <div class="top-part">
         <div class="top-part_section">
           <include src="./partials/header.html"></include>
           <include src="./partials/hero.html"></include>
           <include src="./partials/about.html"></include>
         </div>
-      </section>
+      </div>
+
       <div class="bottom-part">
         <include src="./partials/program.html"></include>
-        <!-- <include src="./partials/reviews.html"></include> -->
+        <include src="./partials/reviews.html"></include>
         <include src="./partials/registration.html"></include>
         <include src="./partials/footer.html"></include>
       </div>
-
-      <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-      <script
-        type="text/javascript"
-        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-      ></script>
-      <script src="./index.js"></script>
-      <script src="./js/mobile-menu.js"></script>
     </div>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./js/btn-read-more.js"></script>
+    <script src="./index.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

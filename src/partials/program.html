@@ -1,88 +1,184 @@
-<article class="program">
-  <div class="container program__container">
-    <h2 class="title program__title">Program</h2>
+<!--Program-->
 
-    <div class="program__text">
-      <p class="program__text--paragraph">
-        Indulge in this immersive sweet treat experience with The Chef Donut
-        Queen in her New York donut shop!
+<section class="program">
+  <div class="container program__container grid">
+    <div class="program__item program__text grid__item">
+      <a name="program">
+        <h2 class="title program__title">Program</h2>
+      </a>
+      <p class="program__paragraph">
+        Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York
+        donut shop!
       </p>
 
       <ul class="list program__text--list">
-        <li class="program__text--list--item">
-          &#62; A stand up history of donuts
-        </li>
-        <li class="program__text--list--item">
-          &#62; Make 3 donut flavors of your choice
-        </li>
-        <li class="program__text--list--item">
-          &#62; Enjoy all-you-can-eat donuts
-        </li>
-        <li class="program__text--list--item">
-          &#62; Cocktail pairings and coffee included
-        </li>
-        <li class="program__text--list--item">
-          &#62; Photoshoot by professional photographer
-        </li>
-        <li class="program__text--list--item">
-          &#62; Secret receipt of cooking from Eva
-        </li>
-        <li class="program__text--list--item">
-          &#62; All products are included in the price
-        </li>
+        <li class="program__text--list--item">&#62; A stand up history of donuts</li>
+        <li class="program__text--list--item">&#62; Make 3 donut flavors of your choice</li>
+        <li class="program__text--list--item">&#62; Enjoy all-you-can-eat donuts</li>
+        <li class="program__text--list--item">&#62; Cocktail pairings and coffee included</li>
+        <li class="program__text--list--item">&#62; Photoshoot by professional photographer</li>
+        <li class="program__text--list--item">&#62; Secret receipt of cooking from Eva</li>
+        <li class="program__text--list--item">&#62; All products are included in the price</li>
       </ul>
-
-      <p class="program__text--paragraph">
-        Come with your dear people and friends and you will spend an
-        unforgettable time and will become a real professional in donuts
-        cooking!
+      <p class="program__paragraph">
+        <span class="text-more" data-text-more>
+          Come with your dear people and friends and you will spend an unforgettable time and will
+          become a real professional in donuts cooking!</span
+        >
       </p>
+      <button class="btn__read" data-button>
+        <span class="btn__read-more">Read more</span>
+        <span class="btn__read-less">Less</span>
+      </button>
     </div>
 
-    <ul class="list program__card grid">
-      <li class="program__card--item">
-        <picture class="program__card--img"></picture>
-        <div class="program__card--box">
-          <h3 class="titel program__card--titel">Type of the event</h3>
-          <p class="program__card--text">Cooking classes</p>
-          <svg class="program__card--icon" width="" height="">
-            <use href=""></use>
-          </svg>
-        </div>
-      </li>
+    <div class="program__item program__box grid__item">
+      <ul class="list program__card grid">
+        <li class="program__card--item grid__item">
+          <picture class="program__card--img">
+            <source
+              srcset="./images/desktop/donut/donut.png 1x, ./images/desktop/donut/donut@2x.png 2x"
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/tablet/donut/donut.png 1x, ./images/tablet/donut/donut@2x.png 2x"
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/mobile/donut/donut.png 1x, ./images/mobile/donut/donut@2x.png 2x"
+              media="(max-width: 767.98px)"
+              type="image/png"
+            />
 
-      <li class="program__card--item">
-        <picture class="program__card--img"></picture>
-        <div class="program__card--box">
-          <h3 class="titel program__card--titel">Number of guests</h3>
-          <p class="program__card--text">1 to 20</p>
-          <svg class="program__card--icon" width="" height="">
-            <use href=""></use>
-          </svg>
-        </div>
-      </li>
+            <img
+              class="zebra"
+              src="./images/desktop/donut/donut.png"
+              width="97"
+              alt="photo of donut"
+            />
+          </picture>
+          <div class="program__card--box">
+            <h3 class="titel program__card--titel">Type of the event</h3>
+            <p class="program__card--text">Cooking classes</p>
+            <svg class="program__card--icon" width="20" height="18">
+              <use href="./images/sprite/sprite.svg#icon-chef-hat"></use>
+            </svg>
+          </div>
+        </li>
 
-      <li class="program__card--item">
-        <picture class="program__card--img"></picture>
-        <div class="program__card--box">
-          <h3 class="titel program__card--titel">Time of the event</h3>
-          <p class="program__card--text">18:30 (2.5 hours)</p>
-          <svg class="program__card--icon" width="" height="">
-            <use href=""></use>
-          </svg>
-        </div>
-      </li>
+        <li class="program__card--item">
+          <picture class="program__card--img">
+            <source
+              srcset="
+                ./images/desktop/donut/donut_2.png    1x,
+                ./images/desktop/donut/donut_2@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/tablet/donut/donut_2.png 1x, ./images/tablet/donut/donut_2@2x.png 2x"
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/mobile/donut/donut_2.png 1x, ./images/mobile/donut/donut_2@2x.png 2x"
+              media="(max-width: 767.98px)"
+              type="image/png"
+            />
 
-      <li class="program__card--item">
-        <picture class="program__card--img"></picture>
-        <div class="program__card--box">
-          <h3 class="titel program__card--titel">The host speaks</h3>
-          <p class="program__card--text">English, French</p>
-          <svg class="program__card--icon" width="" height="">
-            <use href=""></use>
-          </svg>
-        </div>
-      </li>
-    </ul>
+            <img
+              class="rot"
+              src="./images/desktop/donut/donut_2.png"
+              width="83"
+              alt="photo of donut"
+            />
+          </picture>
+          <div class="program__card--box">
+            <h3 class="titel program__card--titel">Number of guests</h3>
+            <p class="program__card--text">1 to 20</p>
+            <svg class="program__card--icon" width="20" height="18">
+              <use href="./images/sprite/sprite.svg#icon-people"></use>
+            </svg>
+          </div>
+        </li>
+
+        <li class="program__card--item grid__item">
+          <picture class="program__card--img">
+            <source
+              srcset="
+                ./images/desktop/donut/donut_3.png    1x,
+                ./images/desktop/donut/donut_3@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/tablet/donut/donut_3.png 1x, ./images/tablet/donut/donut_3@2x.png 2x"
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/mobile/donut/donut_3.png 1x, ./images/mobile/donut/donut_3@2x.png 2x"
+              media="(max-width: 767.98px)"
+              type="image/png"
+            />
+
+            <img
+              class="cake"
+              src="./images/desktop/donut/donut_3.png"
+              width="88"
+              alt="photo of donut"
+            />
+          </picture>
+          <div class="program__card--box">
+            <h3 class="titel program__card--titel">Time of the event</h3>
+            <p class="program__card--text">18:30 (2.5 hours)</p>
+            <svg class="program__card--icon" width="20" height="20">
+              <use href="./images/sprite/sprite.svg#icon-clock"></use>
+            </svg>
+          </div>
+        </li>
+
+        <li class="program__card--item grid__item">
+          <picture class="program__card--img">
+            <source
+              srcset="
+                ./images/desktop/donut/donut_4.png    1x,
+                ./images/desktop/donut/donut_4@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/tablet/donut/donut_4.png 1x, ./images/tablet/donut/donut_4@2x.png 2x"
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/mobile/donut/donut_4.png 1x, ./images/mobile/donut/donut_4@2x.png 2x"
+              media="(max-width: 767.98px)"
+              type="image/png"
+            />
+
+            <img
+              class="rot"
+              src="./images/desktop/donut/donut_4.png"
+              width="83"
+              alt="photo of donut"
+            />
+          </picture>
+          <div class="program__card--box">
+            <h3 class="titel program__card--titel">The host speaks</h3>
+            <p class="program__card--text">English, French</p>
+            <svg class="program__card--icon" width="25" height="17">
+              <use href="./images/sprite/sprite.svg#icon-chat"></use>
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
-</article>
+</section>

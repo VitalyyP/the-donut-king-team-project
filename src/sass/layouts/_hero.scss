@@ -17,9 +17,6 @@
     align-items: center;
   }
 
-  // & > a {
-  //   border: none;
-  // }
 }
 
 .hero_title {
@@ -71,16 +68,16 @@
 }
 
 .hero_btn {
-  margin-bottom: 65px;
+  // margin-bottom: 65px;
   text-decoration: none;
 
-  @media screen and (max-width: 767.98px) {
-    margin-bottom: 45px;
-  }
+//   @media screen and (max-width: 767.98px) {
+//     margin-bottom: 45px;
+//   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-    margin-bottom: 30px;
-  }
+//   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+//     margin-bottom: 30px;
+//   }
 }
 
 .hero_link {
@@ -96,5 +93,15 @@
 
   @media screen and (max-width: 1279.98px) {
     margin-right: 10px;
+  }
+}
+
+.hero_spoon {
+  position: absolute;
+  left: 0;
+  top: 165px;
+
+  @media screen and (max-width: 1279.98px) {
+    display: none;
   }
 }
