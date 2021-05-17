@@ -1,12 +1,54 @@
+/*стилі футера*/
 .footer {
     margin-top: 77px;
+    padding-bottom: 20px;
 }
+/*фонове зображення*/
+.footer_img {
+    background-position: right bottom;
+    background-image: url('/images/mobile/other/flour.png');
+    background-size: 87px 64px;
+    background-repeat: no-repeat;
+  
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/images/mobile/other/flour@2x.png');
+    }
+  
+    @media screen and(min-width: 768px) {
+      background-image: url('/images/tablet/other/flour.png');
+      background-size: 147px 145px;
+  
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('/images/tablet/other/flour@2x.png');
+      }
+    }
+  
+    @media screen and(min-width: 1280px) {
+      background-image: url('/images/desktop/other/flour.png');
+      background-size: 327px 187px;
+  
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('/images/desktop/other/flour@2x.png');
+      }
+    }
+}
+
 /*контейнер_запитання*/
 .footer_contact {
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .footer_title {
@@ -52,13 +94,13 @@
 
     &::placeholder {
     
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
 
-    color: rgba(171, 129, 108, 0.5);
+        color: rgba(171, 129, 108, 0.5);
     }
 }
 
@@ -103,7 +145,6 @@
 /*телефон_і_адреса*/
 .footer_adress_list {
     margin-top: 35px;
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -118,7 +159,7 @@
 }
 
 .footer_btn {
-    margin-top: 15px;
+    margin-top: 27px;
     align-self: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
