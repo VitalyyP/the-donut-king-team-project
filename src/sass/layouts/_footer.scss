@@ -1,7 +1,15 @@
 /*стилі футера*/
 .footer {
-    margin-top: 77px;
+    margin-top: 27px;
     padding-bottom: 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+        margin-top: 51px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 77px;
+    }
 }
 /*фонове зображення*/
 .footer_img {
@@ -54,11 +62,15 @@
     font-family: var(--title-font);
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 1.80;
 /* identical to box height, or 181% */
     margin-bottom: 0;
     color: var(--title-text-color);
+
+    @media screen and (min-width: 1280px) {
+        font-size: 36px;
+    }
 }
 
 .footer_text {
@@ -71,6 +83,11 @@
 
     text-align: center;
     color: var(--title-text-color);
+
+    @media screen and (min-width: 1280px) {
+        font-size: 18px;
+    }
+    
 }
   
 .footer_form_input {
