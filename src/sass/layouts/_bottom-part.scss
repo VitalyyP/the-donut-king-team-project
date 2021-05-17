@@ -1,6 +1,6 @@
 .bottom-part {
   background-image: url('/images/mobile/background/bg_2.png');
-  // background-size: 100% 1210px;
+  background-size: 100% 1210px;
   background-repeat: no-repeat;
   background-position: center bottom 216px;
 
@@ -13,7 +13,7 @@
 
   @media screen and(min-width: 768px) {
     background-image: url('/images/tablet/background/bg_2.png');
-    // background-size: 100% 1210px;
+    background-size: 100% 1210px;
     background-position: center bottom 63px;
 
 
@@ -27,7 +27,7 @@
 
   @media screen and(min-width: 1280px) {
     background-image: url('/images/desktop/background/bg_2.png');
-    // background-size: 100% 1390px;
+    background-size: 100% 1390px;
     background-position: center bottom ;
 
     @media (min-device-pixel-ratio: 2),
