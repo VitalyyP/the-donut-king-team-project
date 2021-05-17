@@ -1,0 +1,28 @@
+@media screen and (max-width: 1279.98px) {
+  #more {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .btn-read-more {
+    display: none;
+  }
+}
+
+.btn-read-more {
+  font-family: CaveatBrush;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 3.62;
+  color: var(--star-icon-color);
+  border: none;
+  background-color: transparent;
+
+  padding: 0;
+  &:hover,
+  &:focus {
+    color: var(--program-icon-color);
+  }
+}
