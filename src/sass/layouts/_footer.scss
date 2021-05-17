@@ -58,7 +58,7 @@
     font-size: 36px;
     line-height: 1.80;
 /* identical to box height, or 181% */
-
+    margin-bottom: 0;
     color: #2E2520;
 }
 
@@ -105,7 +105,6 @@
 }
 
 .footer_question {
-       
     align-self: center;
     width: 265px;
     height: 20px;
@@ -141,9 +140,11 @@
     display: flex;
     justify-content: space-between;
 }
+
 .footer_adress {
     color: #2E2520;
     text-decoration: none;
+        
 }
 
 .footer_adress__icon {
@@ -151,6 +152,27 @@
     height: 13px;
 }
 
+/*анімація іконок*/
+.footer_adress_box:hover .footer_adress__icon {
+    animation: animateY-5 2000ms infinite 100ms;
+    content: "translateY(-5px)";
+}
+
+@keyframes animateY-5 {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-5px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+}
+
+/*кнопка*/
 .footer_btn {
     margin-top: 27px;
     align-self: center;
