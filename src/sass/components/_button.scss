@@ -6,7 +6,7 @@
   height: 45px;
   font-size: 24px;
   font-family: 'Caveat Brush', cursive;
-  line-height: 2.71;
+  line-height: 1.85;
   text-align: center;
   color: var(--button-text-color);
   background-color: var(--button-background-color);
@@ -18,5 +18,11 @@
   &:hover {
     color: var(--button-background-color);
     background-color: var(--button-text-color);
+  }
+
+  @media screen and (max-width: 767.98px) {
+    font-size: 18px;
+    width: 145px;
+    height: 40px;
   }
 }
