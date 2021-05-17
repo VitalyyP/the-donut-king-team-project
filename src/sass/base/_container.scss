@@ -3,17 +3,17 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-
+  
   @media screen and (max-width: 767.98px) {
     max-width: 480px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-    width: 664px;
+  @media screen and (min-width: 768px) {
+    width: 665px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 852px;
+    width: 854px;
   }
 }
 
@@ -21,4 +21,16 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 767.98px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
 }

@@ -1,36 +1,45 @@
 .top-part {
-  background-image: url('/images/mobile/background/bg.png');
-  background-size: 100% 461px;
+  background-image: url('/images/mobile/other/cupcake.png'), url('/images/mobile/background/bg.png');
+  background-size: 310px 290px, 100% 461px;
   background-repeat: no-repeat;
+  background-position: top 308px center, top 0 left 0;
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/images/mobile/background/bg@2x.png');
+    background-image: url('/images/mobile/other/cupcake@2x.png'),
+      url('/images/mobile/background/bg@2x.png');
   }
 
   @media screen and(min-width: 768px) {
-    background-image: url('/images/tablet/background/bg.png');
-    background-size: 100% 622px;
+    background-image: url('/images/tablet/other/cupcake.png'),
+      url('/images/tablet/background/bg.png');
+    background-size: 352px 330px, 100% 622px;
+    background-position: top 377px left 11px, top 0 left 0;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/tablet/background/bg@2x.png');
+      background-image: url('/images/tablet/other/cupcake@2x.png'),
+        url('/images/tablet/background/bg@2x.png');
     }
   }
 
   @media screen and(min-width: 1280px) {
-    background-image: url('/images/desktop/background/bg.png');
-    background-size: 100% 1036px;
+    background-image: url('/images/desktop/background/bg.png'),
+      url('/images/desktop/other/cupcake.png');
+    background-size: 100% 1036px, 547px 512px;
+    background-repeat: no-repeat;
+    background-position: top 0 left 0, top 560px left 71px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/desktop/background/bg@2x.png');
+      background-image: url('/images/desktop/background/bg@2x.png'),
+        url('/images/desktop/other/cupcake@2x.png');
     }
   }
 }
@@ -46,33 +55,38 @@
   background-image: url(/images/mobile/donut/donuts.png);
 
   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  background-image: url(/images/mobile/donut/donuts@2x.png);
-}
-
-@media screen and(min-width: 768px) {
-  background-image: url(/images/tablet/donut/donuts.png);
-  background-position: 62% top;
-
-  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/images/tablet/donut/donuts@2x.png);
+    background-size: 120px 114px;
+    background-image: url(/images/mobile/donut/donuts@2x.png);
   }
-}
 
-@media screen and(min-width: 1280px) {
-  background-image: url(/images/desktop/donut/donuts.png);
-  background-position: right top;
+  @media screen and(min-width: 768px) {
+    background-image: url(/images/tablet/donut/donuts.png);
+    background-position: 65% top;
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/images/desktop/donut/donuts@2x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-size: 380px 361px;
+
+      background-image: url(/images/tablet/donut/donuts@2x.png);
+    }
   }
-}
+
+  @media screen and(min-width: 1280px) {
+    background-image: url(/images/desktop/donut/donuts.png);
+    background-position: right top;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-size: 719px 660px;
+
+      background-image: url(/images/desktop/donut/donuts@2x.png);
+    }
+  }
 }
