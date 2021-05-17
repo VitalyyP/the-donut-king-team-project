@@ -39,6 +39,12 @@
   }
 }
 
+.about__title {
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
 // .about_img {
 //   position: absolute;
 //   @media screen and (max-width: 767.98px) {

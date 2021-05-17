@@ -5,7 +5,8 @@
 
   background-color: #fffff9;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  // justify-content: center;
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     flex-wrap: nowrap;
@@ -84,7 +85,9 @@
   flex-wrap: wrap;
 
   --grid-num: 2;
-  justify-content: center;
+  justify-content: space-evenly;
+  // justify-content: center;
+
 }
 
 .program__card--item:nth-child(2n) {
@@ -187,6 +190,12 @@
     margin-left: 80px;
     width: 25px;
     height: 23px;
+  }
+}
+
+.program__title {
+  @media screen and (min-width: 768px) {
+    text-align: left;
   }
 }
 
