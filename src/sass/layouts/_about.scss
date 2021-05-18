@@ -1,4 +1,6 @@
 .about__container {
+  position: relative;
+
   @media screen and (max-width: 767.98px) {
     margin-left: auto;
     padding-top: 270px;
@@ -6,6 +8,7 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 80px;
+    justify-content: flex-end;
     margin-left: auto;
     width: calc(100% / 2);
   }
@@ -14,43 +17,10 @@
     margin-left: auto;
     padding-top: 120px;
     padding-bottom: 45px;
-    width: calc(100% / 2 - 40px);
+    width: calc(100% / 2 - 60px);
   }
 }
 
 .about__text:not(:last-child) {
   margin-bottom: 10px;
 }
-
-.about__foto {
-  @media screen and (max-width: 767.98px) {
-    width: 72px;
-    height: 100%;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 82px;
-    height: 100%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 128px;
-    height: 100%;
-  }
-}
-
-// .about_img {
-//   position: absolute;
-//   @media screen and (max-width: 767.98px) {
-//     top: 190px;
-//     left: 110px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 82px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     width: 128px;
-//   }
-// }
