@@ -1,6 +1,7 @@
 @media screen and (max-width: 1279.98px) {
   .text-more {
     display: none;
+    padding-top: 10px;
   }
 
   .text-more.is-open {
@@ -43,4 +44,15 @@
   .btn__read-more {
     display: none;
   }
+  .about__text--last {
+    padding-top: 10px;
+  }
+}
+
+.btn__read:active,
+.btn__read:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
 }
