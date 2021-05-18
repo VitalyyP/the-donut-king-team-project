@@ -1,140 +1,138 @@
+.registration__div {
+  width: 290px;
+  height: 510px;
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
 
-.registration__div{
- width: 290px;
-height: 510px;
-background: #FFFFF9;
-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-border-radius:  150px 150px 0px 0px;
-
- @media screen and (min-width: 767px){
-     display: flex;
-     position: relative;
-     border-radius: 150px ;
-     width: 634px;
-    //  margin-top: 70px;
-     height: 260px;
-    // margin-bottom: 86px;
- }
-
- @media screen and (min-width: 1279px){
-width: 822px;
- }
-}
-
-.registration__image{
-    padding-top: 70px;
-    padding-bottom: 40px;
-    @media screen and (min-width: 767px){
-        outline: 1px solid tomato;
- background-image: url("/images/tablet/donut/donut_5.png"), url("/images/tablet/other/confetti.png");
- background-repeat: no-repeat;
-//  background-size: 196px 200px, 190px 345px;
- background-position: 0 15px,600px 100px;
-    
-    @media (min-resolution:2dppx) {
-        background-image: url("/images/tablet/donut/donut_5@2x.png"),url("/images/tablet/other/confetti@2x.png");  
-         background-size: 196px 200px, 190px 345px;
-    }}
-    @media screen and (min-width: 1279px){
-    
- background-image: url("/images/desktop/donut/donut_5.png"), url("/images/desktop/other/confetti.png");
- background-repeat: no-repeat;
-//  background-size: 196px 200px, 300px 544px;
- background-position: 70px 0,710px 80px;
-
-    @media (min-resolution:2dppx) {
-        background-image: url("/images/desktop/donut/donut_5@2x.png"),url("/images/desktop/other/confetti@2x.png");  
-         background-size: 196px 200px, 190px 345px;
-    }}
-}
-
-
- .registration__title{
-     display: block;
-    padding-top: 15px;
-    margin-bottom: 11px;
-    text-align: center;
-
-    @media screen and (min-width: 767px){
-        margin-bottom: 0;
-        margin-top: 40px;
-        padding-top: 0;
-        position: absolute;
-        top: -120px;
-        left: 270px;
-    }
-    @media screen and (min-width: 1279px){
-        left: 316px;
-        top: -120px;
-    }
-}
-
-
-.registration__date{
-font-family:  --text-font;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 1.2;
-text-align: center;
-margin-bottom: 25px;
-color:#2E2520 ;
-
- @media screen and (min-width: 767px){
-     text-align: end;
-     margin-bottom: 34px;
- }
- @media screen and (min-width: 1279px){
-     margin-bottom: 30px;
-     font-size: 20px;
- }
-}
-.registration__prise{
+  @media screen and (min-width: 767px) {
+    display: flex;
     position: relative;
-display: block;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 1.2;
-text-align: center;
-color: #2E2520;
-margin-bottom: 31px;
+    border-radius: 150px;
+    width: 634px;
+    //  margin-top: 70px;
+    height: 260px;
+    // margin-bottom: 86px;
+  }
 
-&::after{
-    content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 43px;
-        border: 1px solid rgba(171, 129, 108, 0.5);
-        border-top: transparent;
-        width: 265px;
-         @media screen and (min-width: 767px){
-            transform: rotate(90deg);
-            width: 190px;
-            left: 35px;
-            top: -5px;
-         }
-         @media screen and (min-width: 1279px){
-         
-           left: 45px;}
+  @media screen and (min-width: 1279px) {
+    width: 822px;
+  }
 }
-@media screen and (min-width: 767px){
+
+// .registration__image {
+//   padding-top: 70px;
+//   padding-bottom: 40px;
+//   @media screen and (min-width: 767px) {
+//     outline: 1px solid tomato;
+//     background-image: url('/images/tablet/donut/donut_5.png'),
+//       url('/images/tablet/other/confetti.png');
+//     background-repeat: no-repeat;
+//     background-size: 250px 250px, 190px 345px;
+//     background-position: 0 15px, 600px 100px;
+
+//     @media (min-resolution: 2dppx) {
+//       background-image: url('/images/tablet/donut/donut_5@2x.png'),
+//         url('/images/tablet/other/confetti@2x.png');
+//       background-size: 250px 250px, 190px 345px;
+//     }
+//   }
+//   @media screen and (min-width: 1279px) {
+//     background-image: url('/images/desktop/donut/donut_5.png'),
+//       url('/images/desktop/other/confetti.png');
+//     background-repeat: no-repeat;
+//     background-size: 250px 250px, 600px 1090px;
+//     background-position: calc(50% - 450px) 25%, 50% 50%;
+
+//     @media (min-resolution: 2dppx) {
+//       background-image: url('/images/desktop/donut/donut_5@2x.png'),
+//         url('/images/desktop/other/confetti@2x.png');
+//       background-size: 250px 250px, 600px 1090px;
+//     }
+//   }
+// }
+
+.registration__title {
+  display: block;
+  padding-top: 15px;
+  margin-bottom: 11px;
+  text-align: center;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding-top: 0;
+    position: absolute;
+    top: -120px;
+    left: 270px;
+  }
+  @media screen and (min-width: 1279px) {
+    left: 316px;
+    top: -120px;
+  }
+}
+
+.registration__date {
+  font-family: --text-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2e2520;
+
+  @media screen and (min-width: 767px) {
     text-align: end;
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: 1279px) {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
 }
+.registration__prise {
+  position: relative;
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: #2e2520;
+  margin-bottom: 31px;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 43px;
+    border: 1px solid rgba(171, 129, 108, 0.5);
+    border-top: transparent;
+    width: 265px;
+    @media screen and (min-width: 767px) {
+      transform: rotate(90deg);
+      width: 190px;
+      left: 35px;
+      top: -5px;
+    }
+    @media screen and (min-width: 1279px) {
+      left: 45px;
+    }
+  }
+  @media screen and (min-width: 767px) {
+    text-align: end;
+  }
 }
 
-.registration__laptop{
-    @media screen and (min-width: 767px){
-        margin-top: 54px;
-        margin-left: 35px;}
-  
-    @media screen and (min-width: 1279px){
-        margin-left: 107px;
-        font-size: 20px;
-    }
-}
+.registration__laptop {
+  @media screen and (min-width: 767px) {
+    margin-top: 54px;
+    margin-left: 35px;
+  }
+
 
 .registration__form{
     @media screen and (min-width: 767px){
@@ -142,68 +140,68 @@ margin-bottom: 31px;
         margin-left: 60px;
         width: 234px;
     }
+
 }
 
-.registration__form-title{
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 1.25;
-text-align: center;
-margin-bottom: 17px;
+.registration__form-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 17px;
 
-color: #2E2520;
+  color: #2e2520;
 
-@media screen and (min-width: 767px){
+  @media screen and (min-width: 767px) {
     text-align: start;
-}
-@media screen and (min-width: 1279px){
+  }
+  @media screen and (min-width: 1279px) {
     margin-bottom: 13px;
     font-size: 18px;
     line-height: 1.22;
+  }
 }
-}
-.registration__form-input{
- width: 265px;
-height: 20px;
-margin-bottom: 27px;
-border: 1px solid #AB816C;
-border-top: transparent;
-border-right: transparent;
-border-left: transparent;
-background: #FFFFF9;
+.registration__form-input {
+  width: 265px;
+  height: 20px;
+  margin-bottom: 27px;
+  border: 1px solid #ab816c;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  background: #fffff9;
 
-
-&::placeholder{
-    
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-color: rgba(171, 129, 108, 0.5);
-}
-&:last-child{
+  &::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(171, 129, 108, 0.5);
+  }
+  &:last-child {
     margin-bottom: 0;
-}
+  }
 }
 
-.registration__form-input{
-    @media screen and (min-width: 767px){
-        width: 234px;
-        margin-bottom: 15px;
-    }
-    &:last-child{
-        margin-bottom: 0;
-    }
-    @media screen and (min-width: 1279px){
-        margin-bottom: 13px;
-    }
-    &:last-child{
-        margin-bottom: 0;
-    }
+.registration__form-input {
+  @media screen and (min-width: 767px) {
+    width: 234px;
+    margin-bottom: 15px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1279px) {
+    margin-bottom: 13px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
+
 
 
 .registration__form-placeholder{
@@ -213,25 +211,26 @@ font-weight: normal;
 font-size: 16px;
 line-height: 20px;
 
-color: rgba(171, 129, 108, 0.5);
+
+  color: rgba(171, 129, 108, 0.5);
 }
 
-.registration__button{
-    margin-top: 37px;
-    margin-left: auto;
-    margin-right: auto;
-  
-   
-@media screen and (min-width: 767px){
+.registration__button {
+  margin-top: 37px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 767px) {
     margin-top: 110px;
     margin-left: 25px;
-  
-}
-@media screen and (min-width: 1279px){
+  }
+  @media screen and (min-width: 1279px) {
     margin-left: 38px;
     width: 158px;
     height: 45px;
+  }
 }
+
 }
 
 
@@ -241,4 +240,5 @@ input:invalid:not(:placeholder-shown){
 input:valid:not(:placeholder-shown){
     border-color: green;
 }
+
 
