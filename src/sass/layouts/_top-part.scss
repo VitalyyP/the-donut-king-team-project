@@ -1,9 +1,8 @@
 .top-part {
-  background-image: url('/images/mobile/donut/donut_3.png'), url('/images/mobile/other/cupcake.png'),
-    url('/images/mobile/background/bg.png');
-  background-size: 72px 80px, 310px 290px, 100% 461px;
+  background-image: url('/images/mobile/other/cupcake.png'), url('/images/mobile/background/bg.png');
   background-repeat: no-repeat;
-  background-position: top 510px left 120px, top 308px center, top 0 left 0;
+  background-size: 290px 310px, 100% 461px;
+  background-position: top 308px left 50%, top 0 left 0;
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
