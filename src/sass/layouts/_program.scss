@@ -5,8 +5,8 @@
 
   background-color: #fffff9;
   flex-wrap: wrap;
-  justify-content: space-between;
-  // justify-content: center;
+
+  justify-content: space-evenly;
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     flex-wrap: nowrap;
@@ -49,7 +49,6 @@
 
   left: 15px;
   right: 15px;
-  display: block;
   --grid-num: 1;
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
@@ -61,9 +60,11 @@
 }
 
 .program__box {
-  display: block;
-
   margin-top: -30px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 320px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     margin-top: 0px;
