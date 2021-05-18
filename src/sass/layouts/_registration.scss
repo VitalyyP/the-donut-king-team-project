@@ -21,32 +21,31 @@ width: 822px;
  }
 }
 
-.registration__image{
-    padding-top: 70px;
-    padding-bottom: 40px;
-    @media screen and (min-width: 767px){
-        outline: 1px solid tomato;
- background-image: url("/images/tablet/donut/donut_5.png"), url("/images/tablet/other/confetti.png");
- background-repeat: no-repeat;
-//  background-size: 196px 200px, 190px 345px;
- background-position: 0 15px,600px 100px;
+// .registration__image{
+//     padding-top: 70px;
+//     padding-bottom: 40px;
+//     @media screen and (min-width: 767px){
+//  background-image: url("/images/tablet/donut/donut_5.png"), url("/images/tablet/other/confetti.png");
+//  background-repeat: no-repeat;
+// //  background-size: 196px 200px, 190px 345px;
+//  background-position: 0 15px,600px 100px;
     
-    @media (min-resolution:2dppx) {
-        background-image: url("/images/tablet/donut/donut_5@2x.png"),url("/images/tablet/other/confetti@2x.png");  
-         background-size: 196px 200px, 190px 345px;
-    }}
-    @media screen and (min-width: 1279px){
+//     @media (min-resolution:2dppx) {
+//         background-image: url("/images/tablet/donut/donut_5@2x.png"),url("/images/tablet/other/confetti@2x.png");  
+//          background-size: 196px 200px, 190px 345px;
+//     }}
+//     @media screen and (min-width: 1279px){
     
- background-image: url("/images/desktop/donut/donut_5.png"), url("/images/desktop/other/confetti.png");
- background-repeat: no-repeat;
-//  background-size: 196px 200px, 300px 544px;
- background-position: 70px 0,710px 80px;
+//  background-image: url("/images/desktop/donut/donut_5.png"), url("/images/desktop/other/confetti.png");
+//  background-repeat: no-repeat;
+// //  background-size: 196px 200px, 300px 544px;
+//  background-position: 70px 0,710px 80px;
 
-    @media (min-resolution:2dppx) {
-        background-image: url("/images/desktop/donut/donut_5@2x.png"),url("/images/desktop/other/confetti@2x.png");  
-         background-size: 196px 200px, 190px 345px;
-    }}
-}
+//     @media (min-resolution:2dppx) {
+//         background-image: url("/images/desktop/donut/donut_5@2x.png"),url("/images/desktop/other/confetti@2x.png");  
+//          background-size: 196px 200px, 190px 345px;
+//     }}
+// }
 
 
  .registration__title{
