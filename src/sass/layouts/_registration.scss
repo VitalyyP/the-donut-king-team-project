@@ -2,8 +2,6 @@
 .registration__div{
  width: 290px;
 height: 510px;
-
-
 background: #FFFFF9;
 box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
 border-radius:  150px 150px 0px 0px;
@@ -13,8 +11,9 @@ border-radius:  150px 150px 0px 0px;
      position: relative;
      border-radius: 150px ;
      width: 634px;
-     margin-top: 100px;
+    //  margin-top: 70px;
      height: 260px;
+    // margin-bottom: 86px;
  }
 
  @media screen and (min-width: 1279px){
@@ -22,6 +21,32 @@ width: 822px;
  }
 }
 
+.registration__image{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    @media screen and (min-width: 767px){
+        outline: 1px solid tomato;
+ background-image: url("/images/tablet/donut/donut_5.png"), url("/images/tablet/other/confetti.png");
+ background-repeat: no-repeat;
+//  background-size: 196px 200px, 190px 345px;
+ background-position: 0 15px,600px 100px;
+    
+    @media (min-resolution:2dppx) {
+        background-image: url("/images/tablet/donut/donut_5@2x.png"),url("/images/tablet/other/confetti@2x.png");  
+         background-size: 196px 200px, 190px 345px;
+    }}
+    @media screen and (min-width: 1279px){
+    
+ background-image: url("/images/desktop/donut/donut_5.png"), url("/images/desktop/other/confetti.png");
+ background-repeat: no-repeat;
+//  background-size: 196px 200px, 300px 544px;
+ background-position: 70px 0,710px 80px;
+
+    @media (min-resolution:2dppx) {
+        background-image: url("/images/desktop/donut/donut_5@2x.png"),url("/images/desktop/other/confetti@2x.png");  
+         background-size: 196px 200px, 190px 345px;
+    }}
+}
 
 
  .registration__title{
@@ -31,8 +56,11 @@ width: 822px;
     text-align: center;
 
     @media screen and (min-width: 767px){
+        margin-bottom: 0;
+        margin-top: 40px;
+        padding-top: 0;
         position: absolute;
-        top: -90px;
+        top: -120px;
         left: 270px;
     }
     @media screen and (min-width: 1279px){
@@ -86,11 +114,11 @@ margin-bottom: 31px;
             transform: rotate(90deg);
             width: 190px;
             left: 35px;
-            top: -20px;
+            top: -5px;
          }
          @media screen and (min-width: 1279px){
          
-           top: -25px;}
+           left: 45px;}
 }
 @media screen and (min-width: 767px){
     text-align: end;
@@ -112,7 +140,7 @@ margin-bottom: 31px;
     @media screen and (min-width: 767px){
         margin-top: 54px;
         margin-left: 60px;
-        width: 292px;
+        width: 234px;
 
     }
 }
@@ -145,6 +173,8 @@ border: 1px solid #AB816C;
 border-top: transparent;
 border-right: transparent;
 border-left: transparent;
+background: #FFFFF9;
+
 
 &::placeholder{
     
@@ -174,7 +204,6 @@ color: rgba(171, 129, 108, 0.5);
     &:last-child{
         margin-bottom: 0;
     }
-
 }
 
 .registration__form-placeholder{
@@ -195,10 +224,11 @@ color: rgba(171, 129, 108, 0.5);
    
 @media screen and (min-width: 767px){
     margin-top: 110px;
-    margin-right: 21px;
+    margin-left: 25px;
+  
 }
 @media screen and (min-width: 1279px){
-    margin-right: 98px;
+    margin-left: 38px;
     width: 158px;
     height: 45px;
 }
