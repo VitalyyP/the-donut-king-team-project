@@ -3,10 +3,9 @@
 .program__container {
   display: flex;
 
-  background-color: #fffff9;
   flex-wrap: wrap;
-  justify-content: space-between;
-  // justify-content: center;
+
+  justify-content: space-evenly;
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     flex-wrap: nowrap;
@@ -64,6 +63,10 @@
   display: block;
 
   margin-top: -30px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 320px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     margin-top: 0px;
@@ -305,7 +308,7 @@ img.cake:focus {
   cursor: pointer;
 
   @media screen and (min-width: 1280px) {
-    color: #fffff9;
+    visibility: hidden;
   }
 }
 
