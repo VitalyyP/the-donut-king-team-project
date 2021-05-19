@@ -1,0 +1,60 @@
+.modal-map {
+  border: 1px solid var(--program-icon-color);
+  border-radius: 4px;
+  box-shadow: var(--program-card-box-shadow);
+  background-color: var(--background-color);
+
+  padding: 5px 5px 5px 5px;
+  max-width: 450px;
+  height: 300px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 520px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+.modal-map__window {
+  text-align: center;
+}
+
+iframe {
+  width: calc(100% - 10px);
+  height: 260px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 480px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    height: 550px;
+  }
+}
+
+.modal-map__btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 5px;
+
+  &:hover,
+  &:focus {
+    .modal-map__icon {
+      fill: var(--star-icon-color);
+    }
+  }
+}
+
+.modal-map__icon {
+  fill: var(--program-icon-color);
+  width: 10px;
+  height: 10px;
+}
