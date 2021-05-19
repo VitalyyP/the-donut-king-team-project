@@ -39,6 +39,17 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+.button:disabled{
+  background-color: rgba(171, 129, 108, 0.5);
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
 
 h1,
 h2,

@@ -22,37 +22,6 @@
   }
 }
 
-// .registration__image {
-//   padding-top: 70px;
-//   padding-bottom: 40px;
-//   @media screen and (min-width: 767px) {
-//     outline: 1px solid tomato;
-//     background-image: url('/images/tablet/donut/donut_5.png'),
-//       url('/images/tablet/other/confetti.png');
-//     background-repeat: no-repeat;
-//     background-size: 250px 250px, 190px 345px;
-//     background-position: 0 15px, 600px 100px;
-
-//     @media (min-resolution: 2dppx) {
-//       background-image: url('/images/tablet/donut/donut_5@2x.png'),
-//         url('/images/tablet/other/confetti@2x.png');
-//       background-size: 250px 250px, 190px 345px;
-//     }
-//   }
-//   @media screen and (min-width: 1279px) {
-//     background-image: url('/images/desktop/donut/donut_5.png'),
-//       url('/images/desktop/other/confetti.png');
-//     background-repeat: no-repeat;
-//     background-size: 250px 250px, 600px 1090px;
-//     background-position: calc(50% - 450px) 25%, 50% 50%;
-
-//     @media (min-resolution: 2dppx) {
-//       background-image: url('/images/desktop/donut/donut_5@2x.png'),
-//         url('/images/desktop/other/confetti@2x.png');
-//       background-size: 250px 250px, 600px 1090px;
-//     }
-//   }
-// }
 
 .registration__title {
   display: block;
@@ -133,6 +102,9 @@
   @media screen and (min-width: 767px) {
     margin-top: 54px;
     margin-left: 35px;
+  }
+  @media screen and (min-width: 1279px){
+    margin-left: 107px;
   }
 }
 
@@ -229,9 +201,4 @@
   }
 }
 
-input:invalid:not(:placeholder-shown) {
-  border-color: red;
-}
-input:valid:not(:placeholder-shown) {
-  border-color: green;
-}
+
