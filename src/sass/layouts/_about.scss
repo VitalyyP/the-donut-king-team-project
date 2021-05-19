@@ -39,3 +39,9 @@
 .about__text--center {
   padding-top: 10px;
 }
+
+.about__text--last {
+  @media screen and (min-width: 1280px) {
+    padding-top: 10px;
+  }
+}
