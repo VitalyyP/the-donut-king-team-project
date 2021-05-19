@@ -35,23 +35,7 @@
 .about__text {
   margin-bottom: 0;
 }
-// <<<<<<< about-style
-// =======
 
-// .about__foto {
-//   @media screen and (max-width: 767.98px) {
-//     width: 72px;
-//     height: 100%;
-//   }
-
-@media screen and (max-width: 1280px) {
-  .about__text--last {
-    padding-top: 0px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .about__text--last {
-    padding-top: 10px;
-  }
+.about__text--center {
+  padding-top: 10px;
 }
