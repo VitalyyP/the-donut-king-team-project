@@ -2,10 +2,13 @@
 
 .program__container {
   display: flex;
-
   flex-wrap: wrap;
 
   justify-content: space-evenly;
+
+  @media screen and (max-width: 300px) {
+    padding-left: 40px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     flex-wrap: nowrap;
@@ -23,7 +26,7 @@
 
   left: 15px;
 
-  font-family: Montserrat;
+  font-family: var(--text-font);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -33,7 +36,6 @@
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     margin-top: 0px;
-    float: left;
 
     --grid-num: 2;
   }
@@ -104,18 +106,14 @@
   }
 }
 
-.program__card--item:nth-child(3n) {
-  margin-top: -50px;
-}
-
 .program__card--box {
   width: 142px;
   height: 142px;
 
   border-radius: 50%;
 
-  background: #fef3e4;
-  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+  background: var(--second-background-color);
+  box-shadow: var(--program-card-box-shadow);
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     flex-wrap: nowrap;
@@ -134,11 +132,8 @@
   margin-bottom: -50px;
   margin-left: 25px;
 
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-    margin-left: 30px;
-  }
   @media screen and (min-width: 1280px) {
-    margin-left: 40px;
+    margin-left: 43px;
   }
 }
 
@@ -146,7 +141,7 @@
   padding-top: 60px;
 
   height: 23.67px;
-  font-family: Caveat Brush;
+  font-family: var(--title-font);
 
   font-style: normal;
   font-weight: normal;
@@ -154,7 +149,15 @@
   line-height: 23px;
   text-align: center;
 
-  color: #000000;
+  color: var(--program-text-color);
+
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    padding-top: 50px;
+  }
 
   @media screen and (min-width: 1280px) {
     font-size: 23px;
@@ -164,32 +167,31 @@
 .program__card--text {
   height: 15px;
   left: 205px;
-  padding-top: 13px;
+  padding-top: 17px;
 
-  font-family: Montserrat;
+  font-family: var(--text-font);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
 
-  color: #000000;
-}
+  color: var(--program-text-color);
 
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    padding-top: 15px;
+  }
+}
 .program__card--icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 60px;
 
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-    margin-top: 20px;
-    margin-left: 60px;
-  }
   @media screen and (min-width: 1280px) {
     margin-top: 40px;
-    margin-left: 80px;
+    margin-left: 75px;
     width: 25px;
     height: 23px;
   }
@@ -300,11 +302,11 @@ img.cake:focus {
   width: 85px;
   height: 75px;
   left: 15px;
-  font-family: Caveat Brush;
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  color: #ab816c;
+  color: var(--form-lines-color);
   cursor: pointer;
 
   @media screen and (min-width: 1280px) {
