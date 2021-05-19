@@ -2,9 +2,8 @@
 .registration__div {
   width: 290px;
   height: 510px;
-  background: #fffff9;
-  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-    4px 4px 4px rgba(171, 129, 108, 0.15);
+  background: var(--background-color);
+  box-shadow: var(--registration-box-shadow);
   border-radius: 150px 150px 0px 0px;
 
   @media screen and (min-width: 767px) {
@@ -43,14 +42,14 @@
 }
 
 .registration__date {
-  font-family: --text-font;
+  font-family: var(--text-font);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 25px;
-  color: #2e2520;
+  color: var(--primary-text-color);
 
   @media screen and (min-width: 767px) {
     text-align: end;
@@ -64,13 +63,13 @@
 .registration__prise {
   position: relative;
   display: block;
-  font-family: Montserrat;
+  font-family: var(--text-font);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
-  color: #2e2520;
+  color: var(--primary-text-color);
   margin-bottom: 31px;
 
   &::after {
@@ -79,7 +78,7 @@
     position: absolute;
     left: 0;
     top: 43px;
-    border: 1px solid rgba(171, 129, 108, 0.5);
+    border: 1px solid var(--form-placeholder-color);
     border-top: transparent;
     width: 265px;
     @media screen and (min-width: 767px) {
@@ -116,7 +115,7 @@
 }
 
 .registration__form-title {
-  font-family: Montserrat;
+  font-family: var(--text-font);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -124,7 +123,7 @@
   text-align: center;
   margin-bottom: 17px;
 
-  color: #2e2520;
+  color: var(--primary-text-color);
 
   @media screen and (min-width: 767px) {
     text-align: start;
@@ -139,19 +138,18 @@
   width: 265px;
   height: 20px;
   margin-bottom: 27px;
-  border: 1px solid #ab816c;
+  border: 1px solid var(--button-background-color);
   border-top: transparent;
   border-right: transparent;
   border-left: transparent;
-  background: #fffff9;
 
   &::placeholder {
-    font-family: Montserrat;
+    font-family:var(--text-font);
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    color: rgba(171, 129, 108, 0.5);
+    color: var(--form-placeholder-color);
   }
   &:last-child {
     margin-bottom: 0;
@@ -175,13 +173,13 @@
 }
 
 .registration__form-placeholder {
-  font-family: Montserrat;
+  font-family: var(--text-font);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
 
-  color: rgba(171, 129, 108, 0.5);
+  color:var(--form-placeholder-color);
 }
 
 .registration__button {

@@ -41,6 +41,13 @@ button {
 }
 .button:disabled{
   background-color: rgba(171, 129, 108, 0.5);
+  &:focus,
+  &:hover{
+    background-color:rgba(171, 129, 108, 0.5);
+    color: var(--button-text-color);
+    transform: scale(1);
+    cursor:default;
+  }
 }
 
 input:invalid:not(:placeholder-shown) {
@@ -48,6 +55,9 @@ input:invalid:not(:placeholder-shown) {
 }
 input:valid:not(:placeholder-shown) {
   border-color: green;
+}
+input{
+  background-color: transparent;
 }
 
 
