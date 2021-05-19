@@ -1,185 +1,188 @@
 /*стилі футера*/
 .footer {
-    margin-top: 27px;
-    padding-bottom: 20px;
+  margin-top: 27px;
+  padding-bottom: 20px;
 
-    @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-        margin-top: 51px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    margin-top: 51px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        margin-top: 77px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-top: 77px;
+  }
 }
 /*фонове зображення*/
 .footer_img {
-    background-position: right bottom;
-    background-image: url('/images/mobile/other/flour.png');
-    background-size: 87px 64px;
-    background-repeat: no-repeat;
-  
+  background-position: right bottom;
+  background-image: url('/images/mobile/other/flour.png');
+  background-size: 87px 64px;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/images/mobile/other/flour@2x.png');
+  }
+
+  @media screen and(min-width: 768px) {
+    background-image: url('/images/tablet/other/flour.png');
+    background-size: 147px 145px;
+
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/mobile/other/flour@2x.png');
+      background-image: url('/images/tablet/other/flour@2x.png');
     }
-  
-    @media screen and(min-width: 768px) {
-      background-image: url('/images/tablet/other/flour.png');
-      background-size: 147px 145px;
-  
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('/images/tablet/other/flour@2x.png');
-      }
+  }
+
+  @media screen and(min-width: 1280px) {
+    background-image: url('/images/desktop/other/flour.png');
+    background-size: 327px 187px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/images/desktop/other/flour@2x.png');
     }
-  
-    @media screen and(min-width: 1280px) {
-      background-image: url('/images/desktop/other/flour.png');
-      background-size: 327px 187px;
-  
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('/images/desktop/other/flour@2x.png');
-      }
-    }
+  }
 }
 
 /*контейнер_запитання*/
 .footer_contact {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer_title {
-    font-family: var(--title-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.80;
-/* identical to box height, or 181% */
-    margin-bottom: 0;
-    color: var(--title-text-color);
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.8;
+  /* identical to box height, or 181% */
+  margin-bottom: 0;
+  color: var(--title-text-color);
 
-    @media screen and (min-width: 1280px) {
-        font-size: 36px;
-    }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
 }
 
 .footer_text {
-    font-family: var(--text-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    /* identical to box height, or 406% */
+  font-family: var(--text-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height, or 406% */
 
-    text-align: center;
-    color: var(--title-text-color);
+  text-align: center;
+  color: var(--title-text-color);
 
-    @media screen and (min-width: 1280px) {
-        font-size: 18px;
-    }
-    
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
 }
-  
+
 .footer_form_input {
-    align-self: center;
-    width: 265px;
-    height: 20px;
-    border: 1px solid var(--form-lines-color);
-    border-top: transparent;
-    border-right: transparent;
-    border-left: transparent;
-    
-    @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-        width: 410px;
-    }
+  align-self: center;
+  width: 265px;
+  height: 20px;
+  border: 1px solid var(--form-lines-color);
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
 
-    @media screen and (min-width: 1280px) {
-        width: 430px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    width: 410px;
+  }
 
-    &::placeholder {
-    
-        font-family: var(--text-font);
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
+  @media screen and (min-width: 1280px) {
+    width: 430px;
+  }
 
-        color: var(--form-placeholder-color);
-    }
-}
-
-.footer_question {
-    align-self: center;
-    width: 265px;
-    height: 20px;
-    border: 1px solid var(--form-lines-color);
-    border-top: transparent;
-    border-right: transparent;
-    border-left: transparent;
-    margin-top: 15px;
-       
-    @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-        width: 410px;
-    }
-   
-    @media screen and (min-width: 1280px) {
-       width: 430px;
-    }
-
-&::placeholder {
-    
+  &::placeholder {
     font-family: var(--text-font);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    
+
     color: var(--form-placeholder-color);
-    }
+  }
+}
+
+.footer_question {
+  align-self: center;
+  width: 265px;
+  height: 20px;
+  border: 1px solid var(--form-lines-color);
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  margin-top: 15px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    width: 410px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 430px;
+  }
+
+  &::placeholder {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: var(--form-placeholder-color);
+  }
 }
 
 /*телефон_і_адреса*/
 .footer_adress_list {
-    margin-top: 35px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer_adress {
-    color: var(--base-icon-color);
-    fill: var(--base-icon-color);
-    text-decoration: none;
-    &:hover {
-        color: var(--button-background-color);
-        fill: var(--button-background-color);
-    }
+  color: var(--base-icon-color);
+  fill: var(--base-icon-color);
+  border: none;
+  background-color: transparent;
+  //   text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
+  &:hover {
+    color: var(--button-background-color);
+    fill: var(--button-background-color);
+  }
 }
 
 .footer_adress__icon {
-    width: 13px;
-    height: 13px;
+  width: 13px;
+  height: 13px;
 }
 
 /*анімація іконок*/
 .footer_adress_box:hover .footer_adress__icon {
-    animation: animateY-5 2000ms infinite 10ms;
-    content: "translateY(-5px)";
+  animation: animateY-5 2000ms infinite 10ms;
+  content: 'translateY(-5px)';
 }
 
 /*кнопка*/
 .footer_btn {
-    margin-top: 27px;
-    align-self: center;
-    align-items: center;
+  margin-top: 27px;
+  align-self: center;
+  align-items: center;
 }
