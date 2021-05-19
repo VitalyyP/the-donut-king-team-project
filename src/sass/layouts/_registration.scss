@@ -1,8 +1,10 @@
+/* Registration*/
 .registration__div {
   width: 290px;
   height: 510px;
   background: #fffff9;
-  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 150px 150px 0px 0px;
 
   @media screen and (min-width: 767px) {
@@ -104,7 +106,7 @@
   margin-bottom: 31px;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     left: 0;
@@ -132,15 +134,14 @@
     margin-top: 54px;
     margin-left: 35px;
   }
+}
 
-
-.registration__form{
-    @media screen and (min-width: 767px){
-        margin-top: 54px;
-        margin-left: 60px;
-        width: 234px;
-    }
-
+.registration__form {
+  @media screen and (min-width: 767px) {
+    margin-top: 54px;
+    margin-left: 60px;
+    width: 234px;
+  }
 }
 
 .registration__form-title {
@@ -202,15 +203,12 @@
   }
 }
 
-
-
-.registration__form-placeholder{
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-
+.registration__form-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 
   color: rgba(171, 129, 108, 0.5);
 }
@@ -231,14 +229,9 @@ line-height: 20px;
   }
 }
 
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
 }
-
-
-input:invalid:not(:placeholder-shown){
-    border-color: red;
+input:valid:not(:placeholder-shown) {
+  border-color: green;
 }
-input:valid:not(:placeholder-shown){
-    border-color: green;
-}
-
-

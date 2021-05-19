@@ -12,26 +12,29 @@
   }
 
   @media screen and(min-width: 768px) {
+
     background-image: url('/images/tablet/donut/donut_5.png'),
     url('/images/tablet/other/confetti.png'),
     url('/images/tablet/background/bg_2.png');
     background-size: 250px 250px, 380px 380px, 100% 1110px;
     background-position: calc(50% - 260px) 69%, calc(50% - -250px) 80%, center bottom 63px;
 
-
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
+
       background-image: url('/images/tablet/donut/donut_5@2x.png'),
       url('/images/tablet/other/confetti@2x.png'), 
       url('/images/tablet/background/bg_2@2x.png');
       background-size: 250px 250px, 380px 380px, 100% 1110px;
       background-position: calc(50% - 260px) 69%, calc(50% - -250px) 80%, center bottom 63px;
+
     }
   }
 
   @media screen and(min-width: 1280px) {
+
     background-image: url('/images/desktop/donut/donut_5.png'),
     url('/images/desktop/other/confetti.png'), 
     url('/images/desktop/background/bg_2.png');
@@ -42,11 +45,13 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
+
       background-image: url('/images/desktop/donut/donut_5@2x.png'),
       url('/images/desktop/other/confetti@2x.png'),
       url('/images/desktop/background/bg_2@2x.png');
       background-size: 250px 250px, 600px 600px, 100% 1380px;
       background-position: calc(50% - 450px) 69%, calc(50% - -335px) 86%, center bottom ;
+
     }
   }
 }
