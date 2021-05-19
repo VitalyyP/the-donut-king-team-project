@@ -17,7 +17,7 @@
     url('/images/tablet/other/confetti.png'),
     url('/images/tablet/background/bg_2.png');
     background-size: 250px 250px, 380px 380px, 100% 1110px;
-    background-position: calc(50% - 260px) 69%, calc(50% - -250px) 80%, center bottom 63px;
+    background-position: calc(50% - 260px) 73%, calc(50% - -250px) 89%, center bottom 63px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -28,7 +28,7 @@
       url('/images/tablet/other/confetti@2x.png'), 
       url('/images/tablet/background/bg_2@2x.png');
       background-size: 250px 250px, 380px 380px, 100% 1110px;
-      background-position: calc(50% - 260px) 69%, calc(50% - -250px) 80%, center bottom 63px;
+      background-position: calc(50% - 260px) 73%, calc(50% - -250px) 89%, center bottom 63px;
 
     }
   }
@@ -39,7 +39,7 @@
     url('/images/desktop/other/confetti.png'), 
     url('/images/desktop/background/bg_2.png');
     background-size: 250px 250px, 600px 600px, 100% 1380px;
-    background-position: calc(50% - 450px) 69%, calc(50% - -335px) 86%, center bottom ;
+    background-position: calc(50% - 450px) 72%, calc(50% - -335px) 89%, center bottom ;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -50,7 +50,7 @@
       url('/images/desktop/other/confetti@2x.png'),
       url('/images/desktop/background/bg_2@2x.png');
       background-size: 250px 250px, 600px 600px, 100% 1380px;
-      background-position: calc(50% - 450px) 69%, calc(50% - -335px) 86%, center bottom ;
+      background-position: calc(50% - 450px) 72%, calc(50% - -335px) 89%, center bottom ;
 
     }
   }
