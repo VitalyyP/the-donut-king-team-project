@@ -34,7 +34,9 @@
 
   &:hover,
   &:focus {
-    transform: scale(1.25);
+    @media screen and (min-width: 1280px) {
+      transform: scale(1.25);
+    }
   }
 
   & > a {
@@ -89,7 +91,3 @@
   top: 0;
   right: 0;
 }
-
-/*.main-nav {
-   display: none;
-}*/
