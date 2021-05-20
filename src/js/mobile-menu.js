@@ -14,5 +14,6 @@
       mobileMenuRef.classList.toggle('is-open');
       mobileNavList.setAttribute("aria-expanded", !expanded)
       menuBtnRef.classList.toggle('is-open');
+      menuBtnRef.classList.toggle('is-active');
     })
   })()
