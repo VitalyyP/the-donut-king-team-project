@@ -36,6 +36,7 @@
 
 .modal-map.is-hidden {
   transform: translate(0, 100%) scale(0);
+  pointer-events: none;
 }
 
 .modal-map__window {
