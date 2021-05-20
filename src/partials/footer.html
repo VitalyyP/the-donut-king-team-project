@@ -5,39 +5,48 @@
     <div id="contactDiv" class="footer_contact">
       <h2 id="anchor4" class="footer_title">Contact</h2>
       <p class="footer_text">We will answer any question!</p>
-      <input type="email" name="user_mail" id="user_email" class="footer_form_input" placeholder="Email" required />
-      <input type="text" name="user_message" id="question" class="footer_question" placeholder="Type your question"
-        required />
-      <button id="contactBtn" disabled="disabled" type="submit" class="button footer_btn">Send</button>
+      <input
+        type="email"
+        name="user_mail"
+        id="user_email"
+        class="footer_form_input"
+        placeholder="Email"
+        required
+      />
+      <input
+        type="text"
+        name="user_message"
+        id="question"
+        class="footer_question"
+        placeholder="Type your question"
+        required
+      />
+      <button id="contactBtn" disabled="disabled" type="submit" class="button footer_btn">
+        Send
+      </button>
     </div>
     <!--соц-мережі-->
     <div>
-
       <ul class="list social_list social_list--footer">
         <li class="social_item">
           <a class="social_item__link animate_icon" href="" rel="noopener noreferrer">
             <svg class="social_item__icon">
-
               <use href="/images/sprite/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
 
         <li class="social_item">
-
           <a class="social_item__link animate_icon" href="" rel="noopener noreferrer">
             <svg class="social_item__icon">
               <use href="/images/sprite/sprite.svg#icon-instagram"></use>
-
             </svg>
           </a>
         </li>
 
         <li class="social_item">
-
           <a class="social_item__link animate_icon" href="" rel="noopener noreferrer">
             <svg class="social_item__icon">
-
               <use href="/images/sprite/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
@@ -50,15 +59,22 @@
             <svg class="footer_adress__icon">
               <use href="/images/sprite/sprite.svg#icon-telephone"></use>
             </svg>
-            (910)222-8855</a>
+            (910)222-8855</a
+          >
         </li>
         <li class="footer_adress_box">
-          <a class="footer_adress" target="_blank" href="https://goo.gl/maps/9EFvqwXmtGYHHLjb8"
+          <!-- <a class="footer_adress" target="_blank" href="https://goo.gl/maps/9EFvqwXmtGYHHLjb8"
             rel="noopener noreferrer">
             <svg class="footer_adress__icon">
               <use href="/images/sprite/sprite.svg#icon-location"></use>
             </svg>
-            New York</a>
+            New York</a> -->
+          <button class="footer_adress" data-modal-map-open>
+            <svg class="footer_adress__icon">
+              <use href="/images/sprite/sprite.svg#icon-location"></use>
+            </svg>
+            New York
+          </button>
         </li>
       </ul>
     </div>
