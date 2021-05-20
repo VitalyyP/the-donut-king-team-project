@@ -10,6 +10,7 @@
     });
 })()
 
+
     ; (() => {
         contactDiv.addEventListener("input", () => {
             if (user_email.value.length > 0 &&
