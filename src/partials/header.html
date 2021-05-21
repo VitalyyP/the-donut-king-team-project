@@ -1,8 +1,21 @@
+<!--Header-->
 <header class="header">
   <div class="container header header--logo-center">
     <picture>
-      <source srcset="/images/desktop/logo/logo.png 1x, /images/desktop/logo/logo@2x.png 2x" media="(min-width: 1280px)"/>
-      <source srcset="/images/tablet/logo/logo.png 1x, /images/tablet/logo/logo@2x.png 2x" media="(max-width: 1279.98px)"/>
+      <source
+        srcset="
+          /images/desktop/logo/logo.png    1x,
+          /images/desktop/logo/logo@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          /images/tablet/logo/logo.png    1x,
+          /images/tablet/logo/logo@2x.png 2x
+        "
+        media="(max-width: 1279.98px)"
+      />
       <img src="/images/desktop/logo/logo.png" alt="" />
     </picture>
     <ul class="list header_list">
@@ -17,23 +30,32 @@
           <use class="mobile-menu_close" href="../src/images/sprite/sprite.svg#icon-menu-close"></use>
       </svg>
   </button> -->
-  <button class="mobile-menu_button hamburger hamburger--collapse" type="button" data-menu-button>
-    <span  class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-</div>
-<div class="mobile-menu" data-menu>
-  <picture>
-    <source srcset="/images/mobile/logo/menu_logo.png 1x, /images/mobile/logo/menu_logo@2x.png 2x" />
-    <img src="/images/mobile/logo/menu_logo.png" alt="" />
-  </picture>
+    <button
+      class="mobile-menu_button hamburger hamburger--collapse"
+      type="button"
+      data-menu-button
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+  <div class="mobile-menu" data-menu>
+    <picture>
+      <source
+        srcset="
+          /images/mobile/logo/menu_logo.png    1x,
+          /images/mobile/logo/menu_logo@2x.png 2x
+        "
+      />
+      <img src="/images/mobile/logo/menu_logo.png" alt="" />
+    </picture>
 
-  <ul class="list mobile-menu_list" data-menu-list>
-    <li class="mobile-menu_item"><a href="#anchor1">About us</a></li>
-    <li class="mobile-menu_item"><a href="#anchor2">Program</a></li>
-    <li class="mobile-menu_item"><a href="#anchor3">Reviews</a></li>
-    <li class="mobile-menu_item"><a href="#anchor4">Contacts</a></li>
-
-  </ul>
-</div>
+    <ul class="list mobile-menu_list" data-menu-list>
+      <li class="mobile-menu_item"><a href="#anchor1">About us</a></li>
+      <li class="mobile-menu_item"><a href="#anchor2">Program</a></li>
+      <li class="mobile-menu_item"><a href="#anchor3">Reviews</a></li>
+      <li class="mobile-menu_item"><a href="#anchor4">Contacts</a></li>
+    </ul>
+  </div>
+</header>

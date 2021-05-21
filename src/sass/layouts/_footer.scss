@@ -1,4 +1,4 @@
-/*стилі футера*/
+/* Footer */
 .footer {
   margin-top: 27px;
   padding-bottom: 20px;
@@ -14,7 +14,7 @@
 /*фонове зображення*/
 .footer_img {
   background-position: right bottom;
-  background-image: url('/images/mobile/other/flour.png');
+  background-image: url("/images/mobile/other/flour.png");
   background-size: 87px 64px;
   background-repeat: no-repeat;
 
@@ -22,30 +22,30 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('/images/mobile/other/flour@2x.png');
+    background-image: url("/images/mobile/other/flour@2x.png");
   }
 
   @media screen and(min-width: 768px) {
-    background-image: url('/images/tablet/other/flour.png');
+    background-image: url("/images/tablet/other/flour.png");
     background-size: 147px 145px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/tablet/other/flour@2x.png');
+      background-image: url("/images/tablet/other/flour@2x.png");
     }
   }
 
   @media screen and(min-width: 1280px) {
-    background-image: url('/images/desktop/other/flour.png');
+    background-image: url("/images/desktop/other/flour.png");
     background-size: 327px 187px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('/images/desktop/other/flour@2x.png');
+      background-image: url("/images/desktop/other/flour@2x.png");
     }
   }
 }
@@ -178,7 +178,7 @@
 /*анімація іконок*/
 .footer_adress_box:hover .footer_adress__icon {
   animation: animateY-5 2000ms infinite 10ms;
-  content: 'translateY(-5px)';
+  content: "translateY(-5px)";
 }
 
 /*кнопка*/
