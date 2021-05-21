@@ -144,7 +144,7 @@
 }
 
 .program__paragraph {
-  @media screen and (min-width: 319px) {
+  @media screen and (min-width: 319.98px) {
     margin-left: -8px;
   }
 }
@@ -309,16 +309,18 @@ img.cake:focus {
 .addReadMore .readLess {
   display: flex;
   margin-left: 2px;
-  padding-top: 3px;
+  padding-top: 10px;
   padding-bottom: 3px;
   width: 85px;
   height: 75px;
   left: 15px;
   font-family: var(--title-font);
+  font: bold;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  color: var(--form-lines-color);
+
+  color: var(--star-icon-color);
   cursor: pointer;
 
   @media screen and (min-width: 1280px) {
