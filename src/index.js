@@ -1,41 +1,41 @@
-import './sass/main.scss'
+import './sass/main.scss';
 
 // кнопка читать больше-меньше btn-read-more
-
-;(() => {
-  const menuBtnRef = document.querySelector("[data-button]")
-  const mobileMenuRef = document.querySelector("[data-text-more]")
-  menuBtnRef.addEventListener("click", () => {
-    const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false
-    menuBtnRef.classList.toggle("is-open")
-    menuBtnRef.setAttribute("aria-expanded", !expanded)
-    mobileMenuRef.classList.toggle("is-open")
-  })
-})()
+(() => {
+  const menuBtnRef = document.querySelector('[data-button]');
+  const mobileMenuRef = document.querySelector('[data-text-more]');
+  menuBtnRef.addEventListener('click', () => {
+    const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+    menuBtnRef.classList.toggle('is-open');
+    menuBtnRef.setAttribute('aria-expanded', !expanded);
+    mobileMenuRef.classList.toggle('is-open');
+  });
+})();
 
 // мобильное меню в хедере mobile-menu
+(() => {
+  const menuBtnRef = document.querySelector('[data-menu-button]');
+  const mobileMenuRef = document.querySelector('[data-menu]');
+  const mobileNavList = document.querySelector('[data-menu-list]');
+  const mobileMenuHidden = document.querySelector('[modal-open]');
+  menuBtnRef.addEventListener('click', () => {
+    const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+    menuBtnRef.classList.toggle('is-open');
+    menuBtnRef.setAttribute('aria-expanded', !expanded);
+    mobileMenuRef.classList.toggle('is-open');
+    mobileMenuHidden.classList.toggle('is-hidden');
+  });
+  mobileNavList.addEventListener('click', () => {
+    const expanded = mobileNavList.getAttribute('aria-expanded') === 'true' || false;
+    mobileMenuRef.classList.toggle('is-open');
+    mobileNavList.setAttribute('aria-expanded', !expanded);
+    menuBtnRef.classList.toggle('is-open');
+    menuBtnRef.classList.toggle('is-active');
+    mobileMenuHidden.classList.toggle('is-hidden');
+  });
+})();
 
-;(() => {
-    const menuBtnRef = document.querySelector("[data-menu-button]")
-    const mobileMenuRef = document.querySelector("[data-menu]")
-    const mobileNavList = document.querySelector('[data-menu-list]');
-    menuBtnRef.addEventListener("click", () => {
-      const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false
-      menuBtnRef.classList.toggle("is-open")
-      menuBtnRef.setAttribute("aria-expanded", !expanded)
-      mobileMenuRef.classList.toggle("is-open")
-    })
-    mobileNavList.addEventListener("click", () => {
-      const expanded = mobileNavList.getAttribute("aria-expanded") === "true" || false
-      mobileMenuRef.classList.toggle('is-open');
-      mobileNavList.setAttribute("aria-expanded", !expanded)
-      menuBtnRef.classList.toggle('is-open');
-      menuBtnRef.classList.toggle('is-active');
-    })
-})()
-  
 // плавная прокрутка страницы до нужной секции menu-delay
-
 
 $(document).ready(function () {
   // Добавить плавную прокрутку до всех ссылок
@@ -64,37 +64,34 @@ $(document).ready(function () {
   });
 });
 
-
 // общая кнопка-скрол на странице scroll
 
- $(function () {
-    // при нажатии на кнопку scrollup
-    $('.scrollup').click(function () {
-      // переместиться в верхнюю часть страницы
-      $('html, body').animate(
-        {
-          scrollTop: 0,
-        },
-        1000,
-      );
-    });
+$(function () {
+  // при нажатии на кнопку scrollup
+  $('.scrollup').click(function () {
+    // переместиться в верхнюю часть страницы
+    $('html, body').animate(
+      {
+        scrollTop: 0,
+      },
+      1000,
+    );
   });
-  // при прокрутке окна (window)
-  $(window).scroll(function () {
-    // если пользователь прокрутил страницу более чем на 200px
-    if ($(this).scrollTop() > 200) {
-      // то сделать кнопку scrollup видимой
-      $('.scrollup').fadeIn();
-    }
-    // иначе скрыть кнопку scrollup
-    else {
-      $('.scrollup').fadeOut();
-    }
-  });
-
+});
+// при прокрутке окна (window)
+$(window).scroll(function () {
+  // если пользователь прокрутил страницу более чем на 200px
+  if ($(this).scrollTop() > 200) {
+    // то сделать кнопку scrollup видимой
+    $('.scrollup').fadeIn();
+  }
+  // иначе скрыть кнопку scrollup
+  else {
+    $('.scrollup').fadeOut();
+  }
+});
 
 //   модальное окно с картой modal-map
-
 
 (() => {
   const refs = {
@@ -113,78 +110,65 @@ $(document).ready(function () {
 
 // скрипт для menu-icon
 
-    // Look for .hamburger
-        var hamburger = document.querySelector(".hamburger");
-        // On click
-        hamburger.addEventListener("click", function() {
-          // Toggle class "is-active"
-          hamburger.classList.toggle("is-active");
-          // Do something else, like open/close menu
-        });
+// Look for .hamburger
+var hamburger = document.querySelector('.hamburger');
+// On click
+hamburger.addEventListener('click', function () {
+  // Toggle class "is-active"
+  hamburger.classList.toggle('is-active');
+  // Do something else, like open/close menu
+});
 
-        
 //   скрипт для блокировки кнопок в форме button-block
 
+(() => {
+  registForm.addEventListener('input', () => {
+    if (phone.validity.valid && username.validity.valid && email.validity.valid) {
+      registBtn.removeAttribute('disabled');
+    } else {
+      registBtn.setAttribute('disabled', 'disabled');
+    }
+  });
+})();
+(() => {
+  contactDiv.addEventListener('input', () => {
+    if (user_email.validity.valid > 0 && question.validity.valid > 0) {
+      contactBtn.removeAttribute('disabled');
+    } else {
+      contactBtn.setAttribute('disabled', 'disabled');
+    }
+  });
+})();
 
-; (() => {
-    registForm.addEventListener("input", () => {
-        if (
-          phone.validity.valid &&
-          username.validity.valid &&
-          email.validity.valid
-        ) {
-          registBtn.removeAttribute('disabled');
-        } else {
-          registBtn.setAttribute('disabled', 'disabled');
-        }
-    });
-})()
+// скрипт slick
 
-    ; (() => {
-        contactDiv.addEventListener("input", () => {
-            if (user_email.validity.valid > 0 && question.validity.valid > 0) {
-              contactBtn.removeAttribute('disabled');
-            } else {
-              contactBtn.setAttribute('disabled', 'disabled');
-            }
-        });
-    })()
+$(function () {
+  $('.reviews-list').slick({
+    arrows: false,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.reviews-text',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 
-
-    // скрипт slick
-
-    $(function() { 
-    $('.reviews-list').slick({
-        arrows: false,
-        infinite: true,
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.reviews-text',
-        responsive: [
-            {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            }
-        ]
-    });
-
-    $('.reviews-text').slick({
-        arrows: false,
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.reviews-list',
-        centerMode: true,
-        centerPadding: '0px'
-    });
-
-    })
-
-    
-
-    
+  $('.reviews-text').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.reviews-list',
+    centerMode: true,
+    centerPadding: '0px',
+  });
+});
