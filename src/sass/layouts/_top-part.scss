@@ -15,8 +15,8 @@
   @media screen and(min-width: 768px) {
     background-image: url('/images/tablet/other/cupcake.png'),
       url('/images/tablet/background/bg.png');
-    background-size: 352px 330px, 100% 622px;
-    background-position: calc(50% - 200px) 390px, top 0 left 0;
+    background-size: 330px 352px, 100% 622px;
+    background-position: calc(50% - 200px) 385px, top 0 left 0;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -30,9 +30,9 @@
   @media screen and(min-width: 1280px) {
     background-image: url('/images/desktop/background/bg.png'),
       url('/images/desktop/other/cupcake.png');
-    background-size: 100% 1036px, 547px 512px;
+    background-size: 100% 1036px, 512px 547px;
     background-repeat: no-repeat;
-    background-position: top 0 left 0, calc(50% - 295px) 103%;
+    background-position: top 0 left 0, calc(50% - 295px) 98%;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
